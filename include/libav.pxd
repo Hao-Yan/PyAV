@@ -14,6 +14,7 @@ include "libavutil/frame.pxd"
 include "libavutil/samplefmt.pxd"
 include "libavutil/buffer.pxd"
 include "libavutil/hwcontext.pxd"
+include "libavutil/motion_vector.pxd"
 
 include "libavcodec/avcodec.pxd"
 include "libavcodec/hwaccel.pxd"
