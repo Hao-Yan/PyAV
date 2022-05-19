@@ -34,7 +34,7 @@ HWConfigMethod = define_enum('HWConfigMethod', __name__, (
     ('HW_FRAMES_CTX', lib.AV_CODEC_HW_CONFIG_METHOD_HW_FRAMES_CTX),
     ('INTERNAL', lib.AV_CODEC_HW_CONFIG_METHOD_INTERNAL),
     ('AD_HOC', lib.AV_CODEC_HW_CONFIG_METHOD_AD_HOC),
-), is_flags=True, allow_multi_flags=True)
+), is_flags=True)
 
 
 cdef object _cinit_sentinel = object()

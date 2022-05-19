@@ -408,7 +408,7 @@ def dump_codecs():
         codec = e_codec or d_codec
 
         try:
-            print ' %s%s%s%s%s%s %-18s %s' % (
+            print(' %s%s%s%s%s%s %-18s %s %s' % (
                 '.D'[bool(d_codec)],
                 '.E'[bool(e_codec)],
                 codec.type[0].upper(),
@@ -418,6 +418,6 @@ def dump_codecs():
                 '.H'[bool((d_codec or codec).hardware_configs)],
                 codec.name,
                 codec.long_name
-            )
+            ))
         except Exception as e:
-            print '...... %-18s ERROR: %s' % (codec.name, e)
+            print('...... %-18s ERROR: %s' % (codec.name, e))
